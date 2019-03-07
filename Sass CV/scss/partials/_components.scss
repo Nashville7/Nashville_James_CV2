@@ -1,0 +1,26 @@
+/* My download cv button */
+
+/* button anchor tag properties */
+button {
+    width: 9%;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 12px 0;
+    float: right;
+    // border-radius: 5px;
+    margin-top: 2em;
+    margin-right: 19em;
+}
+
+/* button hover effect */
+button:hover{
+    background-color: black;
+    border: 2px solid white;
+    transition: all .2s ease-in-out;
+    box-shadow: 2px 2px 17px #4c4c4c;
+
+}

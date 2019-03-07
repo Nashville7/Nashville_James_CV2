@@ -1,0 +1,514 @@
+// font
+@font-face {
+ src: url(../fonts/Acme-Regular.ttf);
+ font-family: "Acme";
+}
+
+@font-face {
+    src: url(..//fonts/Cabin-Bold.ttf);
+    font-family: "Cabin";
+}
+
+
+// _____________Base styles_____________
+
+/* To make scroling move smooth */
+html {
+    scroll-behavior: smooth;
+}
+
+/* styling of the body*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Thasadith', sans-serif;
+    height: 100vh;
+    scroll-behavior: smooth;
+    color: #666;
+}
+
+/* container for the whole html */
+.container {
+    display: grid;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* styling the header */
+.header {
+    padding: 10px;
+    padding-top: 60px;
+    background-image:linear-gradient(-45deg, rgba(115, 133, 144, 0.17) 50%, rgba(0, 0, 0, 0.2) 50%),  url("../images/apple-black.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+    animation: moving 2s ease forwards;
+}
+
+@keyframes moving {
+    from {
+        padding-top: 0%;
+        opacity: 0;
+    }
+    to {
+        padding-top: 5%;
+        opacity: 1;
+    }
+}
+
+
+/* heading 2 properties & values */
+
+.header h2 {
+    color: #fff;
+    font-size: 37px;
+    font-weight: 800;
+    margin-top: 225px;
+    margin-bottom: 66px;
+    margin-left: 773px;
+    text-shadow: 4px 16px 18px black;
+    
+}
+
+.title {
+    color: Black;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Cabin";
+    font-size: 32px;
+    text-align: center;
+}
+
+.title2 {
+    color: Black;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: "Cabin";
+    font-size: 32px;
+    text-align: center;
+    text-align: right;
+    margin-right: -6em;
+}
+
+.header h3 {
+    color: #aaa0a0;
+    font-size: 20px;
+    text-shadow: 0px 12px 15px black;
+    margin-left: 39em;
+
+}
+
+/* paragraph properties & values */
+p {
+    font-size: 17px;
+    color: #444;
+}
+
+
+/* for creating my whole navbar */
+/* my navbar */
+  nav {
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    border-radius: 0px;
+    padding: 10px 0;
+    height: 46px;
+    margin: 0;
+    border-bottom: 3px solid gray;
+    z-index: 1000;
+
+ }
+
+ /* navbar unordered list fix */
+ nav ul {
+     margin: 0;
+     padding: 0 100px;
+     float: right;
+     text-decoration: none;
+     display: flex;
+ }
+
+/* navbar list style fix */
+ nav li {
+     list-style: none;
+ }
+ 
+/* navbar anchor tag properties */
+ nav a {
+    display: block;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    padding: 0 40px;
+    text-transform: uppercase;
+    line-height: 50px;
+    font-size: 14px;  
+    position: relative;
+}
+
+
+
+
+/* navbar hover effect */
+nav a::before {
+    content: "";
+    position: absolute;
+    bottom: 0.5rem;
+    height: 0.2rem;
+    width: 0rem;
+    background: white;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease-in-out;
+}
+
+nav a:hover::before {
+    width: 70%;
+}
+
+// icons
+i {
+    padding: 6px;
+}
+
+ /* about section properties: custom margin and sizing */
+.about {
+    @include size;
+    background-color: #dddfeb;
+    padding-bottom: 66px;
+    overflow: hidden;
+    color: white;
+    text-align: justify;
+    background-size: cover;  
+    color: #666;
+    height: 90vh;       
+}
+
+/* about section heading 2 properties */
+ .about h2 {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* about paragraph properties */
+ .about p {
+     padding-right: 100px;
+     font-size: 18px;
+     padding-left: 5%;
+     padding-right: 5%;
+     color: #666;
+     font-size: 17px;
+}
+
+/* picture in the about section properties */
+.profile-pic {
+    width: 326px;
+    height: 444px;
+    border-radius: 20px solid;
+    float: right;
+    margin: 1rem 7rem 1rem 1rem;
+    box-shadow: 0 0 135px 6px #8d8484 inset;
+    // box-shadow: 104px 124px 135px 116px #dadada inset;
+
+
+}
+
+
+.content {
+    padding: 5px;
+}
+
+
+/* skills section properties: custom margin and sizing */
+.skills {
+    @include size;
+    // color: white;
+    color: #444;
+    // box-shadow: 0 0 20px 20px #2B2B2B inset;
+    text-align: center;
+    height:600px;
+    // border: 20px solid #2B2B2B;;
+    // background: #2B2B2B;
+    background-color: #dddfeb;
+}
+
+/* portfolio section properties: custom margin and sizing */
+.portfolio {
+    @include size;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 90vh;
+    // background: linear-gradient(to right, #bfcfd9 0%, #d0dfe8 100%);
+
+
+/* portfolio section heading 4 properties     */
+}
+.portfolio h4 {
+    font: 15px/24px 'opensans-semibold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 48px;
+    color: #95A3A3;
+}
+
+/* portfolio made into a grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+/* size of the image */
+.grid img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+
+}
+.box:hover img {
+    transform: scale(1);
+}
+
+
+.box {
+    position: relative;
+    height: 20rem;
+    overflow: hidden;
+}
+
+.picbox {
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(216, 216, 224, 0.685);
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+}
+
+.box:hover .overlay {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+.overlay p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+
+/* contact section properties: custom margin and sizing */
+.contact {
+    @include size;
+    color: #020202;
+    background-color: #dddfeb;
+}
+
+.contact-container > div {
+    text-align: center;
+    display: inline;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* footer properties */
+.footer {
+    margin: 0;
+    display: flex;
+    height: 15px;
+    text-align: left;
+    background: #222;
+    color: #777;
+    padding: 30px 0 25px 0;
+    
+    
+}
+
+.footer-container {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* parallax image properties */
+.parallax1 {
+    padding: 70px 0;
+    position: relative;
+    background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.57) 50%, rgba(0, 0, 0, 0.57) 50%), url("../images/artist-board-bracelet-1327214.jpg");
+    background-attachment: fixed;
+    height: 130px;
+    background-size: cover;
+    z-index: 1;
+}
+
+/* parallax image properties */
+.parallax2 {
+    padding: 70px 0;
+    position: relative;
+    background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.57) 50%, rgba(0, 0, 0, 0.57) 50%), url("../images/abstract-bedrock-blur-1591060.jpg");
+    background-attachment: fixed;
+    height: 200px;
+    background-size: cover;
+    
+}
+
+.parallax3 {
+    padding: 70px 0;
+    position: relative;
+    background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.29) 50%, rgba(0, 0, 0, 0.31) 50%), url("../images/abc.jpg");
+    background-attachment: fixed;
+    height: 130px;
+    background-size: cover;
+}
+
+// Logo
+
+.logo {
+    z-index: 1001;
+    width: 229px;
+    height: 169px;
+    position: fixed;
+    margin-top: -59px;
+}
+
+// Hamburger menu
+
+.navbar {
+    overflow: visible;
+
+}
+
+.hamburger-menu  {
+    position: absolute;
+    display: none;
+    right: 20px;
+}
+.hamburger-menu span {
+    background: red;
+    width: 44px;
+    height: 5px;
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 80rem;
+    border-radius: 6px;
+    position: relative;
+}
+
+
+// .icons i {
+//    font-size: 100px;
+// }
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: auto;
+    
+    
+}
+
+
+
+.icons i {
+    font-size: 6rem;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.icon1 i:hover {
+    color: orange;
+}
+
+.icon2 i:hover {
+    color: rgb(77, 74, 212);
+}
+
+.icon3 i:hover {
+    color: rgb(186, 216, 50);
+}
+
+.icon4 i:hover {
+    color: rgb(211, 72, 192);
+}
+
+.icon5 i:hover {
+    color: rgb(5, 5, 5);
+}
+
+
+
+
+
+// // dot
+// .container5 {
+//     position: absolute;
+//     top: 85%;
+//     left: 69%;
+//     transform: translate(-50%, -50%);
+// }
+
+// .dot-container {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     width: 120px;
+// }
+
+// .dot {
+//     height: 24px;
+//     width: 24px;
+//     border-radius: 50%;
+//     background:#fcfcfc;
+// }
+
+// .dot-1 {
+//     animation: flow .8s ease .2s infinite alternate;
+// }
+
+// .dot-2 {
+//     animation: flow .8s ease .4s infinite alternate;
+// }
+
+// .dot-3 {
+//     animation: flow .8s ease .6s infinite alternate;
+// }
+
+// @keyframes flow {
+//     from{
+//         opacity:1;
+//         transform: scale(1.2);
+//     }
+//     to{
+//         opacity: .20;
+//         transform: scale(.75);
+//     }
+// }
+
+
+.detailcontainer {
+    padding: 8px;
+}

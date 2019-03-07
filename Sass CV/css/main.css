@@ -1,0 +1,470 @@
+/* My download cv button */
+/* button anchor tag properties */
+button {
+  width: 9%;
+  background: none;
+  border: 2px solid white;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 12px 0;
+  float: right;
+  margin-top: 2em;
+  margin-right: 19em; }
+
+/* button hover effect */
+button:hover {
+  background-color: black;
+  border: 2px solid white;
+  transition: all .2s ease-in-out;
+  box-shadow: 2px 2px 17px #4c4c4c; }
+
+@font-face {
+  src: url(../fonts/Acme-Regular.ttf);
+  font-family: "Acme"; }
+@font-face {
+  src: url(..//fonts/Cabin-Bold.ttf);
+  font-family: "Cabin"; }
+/* To make scroling move smooth */
+html {
+  scroll-behavior: smooth; }
+
+/* styling of the body*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Thasadith', sans-serif;
+  height: 100vh;
+  scroll-behavior: smooth;
+  color: #666; }
+
+/* container for the whole html */
+.container {
+  display: grid;
+  width: 100%;
+  overflow-x: hidden; }
+
+/* styling the header */
+.header {
+  padding: 10px;
+  padding-top: 60px;
+  background-image: linear-gradient(-45deg, rgba(115, 133, 144, 0.17) 50%, rgba(0, 0, 0, 0.2) 50%), url("../images/apple-black.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+  animation: moving 2s ease forwards; }
+
+@keyframes moving {
+  from {
+    padding-top: 0%;
+    opacity: 0; }
+  to {
+    padding-top: 5%;
+    opacity: 1; } }
+/* heading 2 properties & values */
+.header h2 {
+  color: #fff;
+  font-size: 37px;
+  font-weight: 800;
+  margin-top: 225px;
+  margin-bottom: 66px;
+  margin-left: 773px;
+  text-shadow: 4px 16px 18px black; }
+
+.title {
+  color: Black;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: "Cabin";
+  font-size: 32px;
+  text-align: center; }
+
+.title2 {
+  color: Black;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: "Cabin";
+  font-size: 32px;
+  text-align: center;
+  text-align: right;
+  margin-right: -6em; }
+
+.header h3 {
+  color: #aaa0a0;
+  font-size: 20px;
+  text-shadow: 0px 12px 15px black;
+  margin-left: 39em; }
+
+/* paragraph properties & values */
+p {
+  font-size: 17px;
+  color: #444; }
+
+/* for creating my whole navbar */
+/* my navbar */
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #000;
+  border-radius: 0px;
+  padding: 10px 0;
+  height: 46px;
+  margin: 0;
+  border-bottom: 3px solid gray;
+  z-index: 1000; }
+
+/* navbar unordered list fix */
+nav ul {
+  margin: 0;
+  padding: 0 100px;
+  float: right;
+  text-decoration: none;
+  display: flex; }
+
+/* navbar list style fix */
+nav li {
+  list-style: none; }
+
+/* navbar anchor tag properties */
+nav a {
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+  padding: 0 40px;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 14px;
+  position: relative; }
+
+/* navbar hover effect */
+nav a::before {
+  content: "";
+  position: absolute;
+  bottom: 0.5rem;
+  height: 0.2rem;
+  width: 0rem;
+  background: white;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.5s ease-in-out; }
+
+nav a:hover::before {
+  width: 70%; }
+
+i {
+  padding: 6px; }
+
+/* about section properties: custom margin and sizing */
+.about {
+  margin: 0;
+  padding-top: 45px;
+  background-color: #dddfeb;
+  padding-bottom: 66px;
+  overflow: hidden;
+  color: white;
+  text-align: justify;
+  background-size: cover;
+  color: #666;
+  height: 90vh; }
+
+/* about section heading 2 properties */
+.about h2 {
+  padding-left: 5%;
+  padding-right: 5%; }
+
+/* about paragraph properties */
+.about p {
+  padding-right: 100px;
+  font-size: 18px;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #666;
+  font-size: 17px; }
+
+/* picture in the about section properties */
+.profile-pic {
+  width: 326px;
+  height: 444px;
+  border-radius: 20px solid;
+  float: right;
+  margin: 1rem 7rem 1rem 1rem;
+  box-shadow: 0 0 135px 6px #8d8484 inset; }
+
+.content {
+  padding: 5px; }
+
+/* skills section properties: custom margin and sizing */
+.skills {
+  margin: 0;
+  padding-top: 45px;
+  color: #444;
+  text-align: center;
+  height: 600px;
+  background-color: #dddfeb; }
+
+/* portfolio section properties: custom margin and sizing */
+.portfolio {
+  margin: 0;
+  padding-top: 45px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 90vh;
+  /* portfolio section heading 4 properties     */ }
+
+.portfolio h4 {
+  font: 15px/24px 'opensans-semibold', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 48px;
+  color: #95A3A3; }
+
+/* portfolio made into a grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  position: relative;
+  width: 90%;
+  margin: auto; }
+
+/* size of the image */
+.grid img {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out; }
+
+.box:hover img {
+  transform: scale(1); }
+
+.box {
+  position: relative;
+  height: 20rem;
+  overflow: hidden; }
+
+.picbox {
+  height: 100%; }
+
+.overlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(216, 216, 224, 0.685);
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50%; }
+
+.box:hover .overlay {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 0; }
+
+.overlay p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  text-align: center; }
+
+/* contact section properties: custom margin and sizing */
+.contact {
+  margin: 0;
+  padding-top: 45px;
+  color: #020202;
+  background-color: #dddfeb; }
+
+.contact-container > div {
+  text-align: center;
+  display: inline;
+  padding: 20px;
+  margin: 20px; }
+
+/* footer properties */
+.footer {
+  margin: 0;
+  display: flex;
+  height: 15px;
+  text-align: left;
+  background: #222;
+  color: #777;
+  padding: 30px 0 25px 0; }
+
+.footer-container {
+  margin: 0px;
+  padding: 0px; }
+
+/* parallax image properties */
+.parallax1 {
+  padding: 70px 0;
+  position: relative;
+  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.57) 50%, rgba(0, 0, 0, 0.57) 50%), url("../images/artist-board-bracelet-1327214.jpg");
+  background-attachment: fixed;
+  height: 130px;
+  background-size: cover;
+  z-index: 1; }
+
+/* parallax image properties */
+.parallax2 {
+  padding: 70px 0;
+  position: relative;
+  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.57) 50%, rgba(0, 0, 0, 0.57) 50%), url("../images/abstract-bedrock-blur-1591060.jpg");
+  background-attachment: fixed;
+  height: 200px;
+  background-size: cover; }
+
+.parallax3 {
+  padding: 70px 0;
+  position: relative;
+  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.29) 50%, rgba(0, 0, 0, 0.31) 50%), url("../images/abc.jpg");
+  background-attachment: fixed;
+  height: 130px;
+  background-size: cover; }
+
+.logo {
+  z-index: 1001;
+  width: 229px;
+  height: 169px;
+  position: fixed;
+  margin-top: -59px; }
+
+.navbar {
+  overflow: visible; }
+
+.hamburger-menu {
+  position: absolute;
+  display: none;
+  right: 20px; }
+
+.hamburger-menu span {
+  background: red;
+  width: 44px;
+  height: 5px;
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 80rem;
+  border-radius: 6px;
+  position: relative; }
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 80%;
+  margin: auto; }
+
+.icons i {
+  font-size: 6rem;
+  transition: all 0.5s ease-in-out; }
+
+.icon1 i:hover {
+  color: orange; }
+
+.icon2 i:hover {
+  color: #4d4ad4; }
+
+.icon3 i:hover {
+  color: #bad832; }
+
+.icon4 i:hover {
+  color: #d348c0; }
+
+.icon5 i:hover {
+  color: #050505; }
+
+.detailcontainer {
+  padding: 8px; }
+
+/* education section properties: custom margin and sizing */
+.education {
+  margin: 0;
+  padding-top: 45px;
+  color: #444;
+  background: linear-gradient(to right, #cdd2d5 0%, #eceeef 100%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  grid-gap: 15px;
+  grid-template-areas: "title2 title2" "tertairy secondary"; }
+
+.tertiary {
+  grid-area: tertairy;
+  height: 29rem;
+  margin: 1em;
+  margin-top: -3em; }
+
+.secondary {
+  grid-area: secondary;
+  height: 29rem;
+  margin: 1em;
+  margin-top: -3em; }
+
+.content {
+  padding: 5px; }
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "about about about" "box1 box2 box3"; }
+
+.profile-pic {
+  grid-area: box3; }
+
+.about-p {
+  grid-area: box1;
+  grid-column: span 2; }
+
+.title {
+  grid-area: about; }
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  width: 70%; }
+
+/* Mobile Devices */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) {
+  nav {
+    width: 100%;
+    position: fixed; }
+
+  nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+    display: block; }
+
+  .fas .fa-house-damage,
+  .fas .fa-graduation-cap,
+  .fas .fa-american-sign-language-interpreting,
+  .fas .fa-briefcase,
+  .fas .fa-file-contract {
+    display: none; }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    top: 1rem;
+    z-index: 1000; }
+
+  .hamburger-menu span {
+    background: red; } }
+/* Responsive Design */
+/*Tablets*/
+/* Responsive Design
+/*Desktop*/
+
+/*# sourceMappingURL=main.css.map */

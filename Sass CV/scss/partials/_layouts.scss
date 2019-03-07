@@ -1,0 +1,71 @@
+
+
+/* education section properties: custom margin and sizing */
+.education {
+    @include size;
+    color: #444;
+    // background: linear-gradient(to right, #bfcfd9 0%, #d0dfe8 100%);
+    background: linear-gradient(to right, #cdd2d5 0%, #eceeef 100%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    grid-gap: 15px;
+    grid-template-areas: 
+    
+            "title2 title2"
+            "tertairy secondary";
+}
+
+.tertiary {
+    grid-area: tertairy;
+    height: 29rem;
+    margin: 1em;
+    margin-top: -3em;
+}
+
+.secondary {
+    grid-area: secondary;
+    height: 29rem;
+    margin: 1em;
+    margin-top: -3em;
+}
+
+
+.content {
+    padding: 5px;
+}
+
+// about grid
+.about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+            "about about about"
+            "box1 box2 box3";
+}
+
+.profile-pic {
+    grid-area: box3;
+}
+
+.about-p {
+    grid-area: box1;
+    grid-column: span 2;
+}
+.title {
+    grid-area: about;
+}
+
+
+// Contact grid
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    width: 70%;
+}
+
+
+
+
+
