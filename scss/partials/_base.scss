@@ -32,6 +32,7 @@ body {
     display: grid;
     width: 100%;
     overflow-x: hidden;
+    
 }
 
 /* styling the header */
@@ -206,8 +207,10 @@ i {
 
 /* picture in the about section properties */
 .profile-pic {
-    width: 326px;
-    height: 444px;
+    // width: 326px;
+    // height: 444px;
+    max-width: 80%;
+    height: auto;
     border-radius: 20px solid;
     float: right;
     margin: 1rem 7rem 1rem 1rem;
@@ -408,7 +411,7 @@ i {
 }
 .hamburger-menu span {
     background: red;
-    width: 44px;
+    width: 40px;
     height: 5px;
     display: block;
     margin-bottom: 5px;

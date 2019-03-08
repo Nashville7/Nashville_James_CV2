@@ -187,8 +187,8 @@ i {
 
 /* picture in the about section properties */
 .profile-pic {
-  width: 326px;
-  height: 444px;
+  max-width: 80%;
+  height: auto;
   border-radius: 20px solid;
   float: right;
   margin: 1rem 7rem 1rem 1rem;
@@ -348,7 +348,7 @@ i {
 
 .hamburger-menu span {
   background: red;
-  width: 44px;
+  width: 40px;
   height: 5px;
   display: block;
   margin-bottom: 5px;
@@ -434,16 +434,28 @@ i {
 
 /* Mobile Devices */
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .header {
+    width: 100vw; }
+
   nav {
-    width: 100%;
-    position: fixed; }
+    width: 100vw; }
 
   nav a {
-    color: #333;
+    color: white;
     text-decoration: none;
     font-weight: 700;
     transition: color 0.3s;
+    padding: 3px;
+    line-height: 41px;
+    display: none; }
+
+  nav a:hover {
+    color: blue; }
+
+  nav ul {
+    margin-top: 51px;
+    grid-template-columns: repeat(1, 1fr);
     display: block; }
 
   .fas .fa-house-damage,
@@ -461,7 +473,78 @@ i {
     z-index: 1000; }
 
   .hamburger-menu span {
-    background: red; } }
+    background: white; }
+
+  .logo {
+    width: 140px;
+    height: 114px;
+    margin-top: -31px; }
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 1000px;
+    grid-template-areas: "about about" "box3 box3" "box1 box2"; }
+
+  .profile-pic {
+    grid-area: box3;
+    text-align: center;
+    width: 90vw; }
+
+  .about-p {
+    grid-area: box1;
+    width: 100vw;
+    max-width: 400px auto;
+    height: auto;
+    text-align: justify; }
+
+  .title {
+    grid-area: about;
+    text-align: center;
+    width: 100vw; }
+
+  .titleskills {
+    width: 100vw;
+    text-align: center; }
+
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 80vw;
+    margin: auto; }
+
+  .education {
+    margin: 0;
+    padding-top: 45px;
+    color: #444;
+    background: linear-gradient(to right, #cdd2d5 0%, #eceeef 100%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    grid-gap: 15px;
+    grid-template-areas: "title2 tittle2" "tertairy tertiary" "secondary secondary"; }
+
+  .tertiary {
+    grid-area: tertairy;
+    height: 29rem;
+    margin: 1em;
+    margin-top: -3em;
+    max-width: 400px auto;
+    width: 90vw; }
+
+  .secondary {
+    grid-area: secondary;
+    height: 29rem;
+    margin: 1em;
+    margin-top: -3em;
+    width: 100vw;
+    max-width: 400px auto; }
+
+  .title2 {
+    grid-area: title2;
+    text-align: center;
+    width: 100vw;
+    margin: 10px; } }
 /* Responsive Design */
 /*Tablets*/
 /* Responsive Design
