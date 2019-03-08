@@ -465,30 +465,29 @@ i {
 
   .header h2 {
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 800;
-    margin-top: 140px;
-    margin-bottom: 66px;
-    margin-left: 175px;
+    margin-top: 340px;
+    margin-bottom: 16px;
+    margin-left: 7px;
     text-shadow: 4px 16px 18px black; }
 
   .header h3 {
     color: #aaa0a0;
-    font-size: 15px;
+    font-size: 11px;
     text-shadow: 0px 12px 15px black;
-    margin-left: 175px;
-    margin-bottom: 20px; }
+    margin-left: 13px; }
 
   #navbar {
     width: 100vw;
     height: 12rem;
     z-index: 2000;
-    top: -14rem;
+    top: -16rem;
     transition: all 0.5s ease-in-out; }
 
   #navbar.active {
     width: 100vw;
-    height: 12rem;
+    height: 15rem;
     z-index: 2000;
     top: 0; }
 
@@ -510,7 +509,12 @@ i {
     grid-template-columns: repeat(1, 1fr);
     background: black;
     display: block;
-    margin-right: 3rem; }
+    margin: auto;
+    padding: 0;
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%);
+    top: 3rem; }
 
   .fas .fa-house-damage,
   .fas .fa-graduation-cap,
@@ -609,7 +613,7 @@ i {
     margin-left: 1rem; }
 
   .skills {
-    height: 1050px; }
+    height: 1400px; }
 
   .portfolio {
     height: 900px; }
@@ -659,6 +663,15 @@ i {
     width: 100vw;
     margin: auto;
     text-align: center; }
+
+  .about p {
+    font-size: 15px; }
+
+  .about h2 {
+    font-size: 19px; }
+
+  .parallax2 {
+    height: 0; }
 
   button {
     background: none;

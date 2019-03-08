@@ -84,21 +84,21 @@
 
 .header h2 {
   color: #fff;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 800;
-  margin-top: 140px;
-  margin-bottom: 66px;
-  margin-left: 175px;
+  margin-top: 340px;
+  margin-bottom: 16px;
+  margin-left: 7px;
   text-shadow: 4px 16px 18px black;
   
 }
 
 .header h3 {
   color: #aaa0a0;
-  font-size: 15px;
+  font-size: 11px;
   text-shadow: 0px 12px 15px black;
-  margin-left: 175px;
-  margin-bottom: 20px;
+  margin-left: 13px;
+
   
 }
 
@@ -106,13 +106,13 @@
 width: 100vw;
 height: 12rem;
 z-index: 2000;
-top: -14rem;
+top: -16rem;
 transition: all 0.5s ease-in-out;
 }
 
 #navbar.active {
   width: 100vw;
-  height: 12rem;
+  height: 15rem;
   z-index: 2000;
   top:0;
   }
@@ -141,7 +141,12 @@ nav ul {
   background: black;
   display: block;
   // background-color: rgba(0, 0, 0, 0.575);
-  margin-right: 3rem;
+  margin: auto;
+  padding: 0;
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%);
+  top: 3rem;
 }
 
 
@@ -210,6 +215,7 @@ nav ul {
   max-width: 400px auto;
   height: auto;
   text-align: justify;
+  
   
 }
 .title {
@@ -288,7 +294,7 @@ nav ul {
   
 }
 .skills {
-  height: 1050px;
+  height: 1400px;
 }
 
 // portfolio
@@ -357,7 +363,19 @@ text-align: center;
   margin: auto;
   text-align: center;
   
-  
+}
+
+.about p {
+  font-size: 15px;
+
+}
+
+.about h2 {
+  font-size: 19px;
+}
+
+.parallax2 {
+  height: 0;
 }
 
 // download button
@@ -372,7 +390,6 @@ button {
   margin-right: 19em;
   width: 30%;
   margin-top:-23em;
-
   position: absolute;
   bottom: 2rem;
   left: 1rem;
