@@ -254,17 +254,24 @@ nav ul {
   height: 1050px;
 }
 
+// portfolio
+
 .portfolio {
+  height: 900px;
+}
+
+.grid {
 display: grid;
-height: 1050px;
 grid-template-columns: repeat(1, 1fr);
+display: grid;
+  width: 80vw;
+  margin: auto;
 grid-template-areas: 
       "title"
       "myh4"
       "box1"
       "box2"
       "box3";
-width: 90vw;
 text-align: center;
 
 }
@@ -272,37 +279,48 @@ text-align: center;
 .title {
   grid-area: title;
   text-align: center;
-  width: 90vw;
 }
 
 .box1 {
   grid-area: box1;
   text-align: center;
-  width: 50vw;
-  height: 20rem;
-  margin-left: 1rem;
+  width: 70vw;
+  height: 10rem;
+  margin-right: 2.5vw;
 }
 
 .box2 {  
   grid-area: box2;
   text-align: center;
-  width: 100vw;
-  height: 20rem;
-  margin-left: 1rem;
+  width: 70vw;
+  height: 10rem;
+  margin-left: 2.5vw;
 }
 
 .box3 {  
   grid-area: box3;
   text-align: center;
-  width: 100vw;
-  height: 20rem;
-  margin-left: 1rem;
+  width: 70vw;
+  height: 10rem;
+  margin-left: 2.5vw;
 }
 
 .myh4 {
   grid-area: myh4;
   text-align: center;
   width: 100vw;
+}
+
+// contact
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 100vw;
+  margin: auto;
+  text-align: center;
+  
+  
 }
 
 }
