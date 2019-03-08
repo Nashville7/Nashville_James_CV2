@@ -384,7 +384,7 @@ i {
 
 .icons i {
   font-size: 6rem;
-  color: white;
+  color: #424242;
   transition: all 0.5s ease-in-out;
   margin-top: 2rem; }
 
@@ -458,7 +458,25 @@ i {
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .header {
-    width: 100vw; }
+    width: 100vw;
+    height: 100vh;
+    position: relative; }
+
+  .header h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 140px;
+    margin-bottom: 66px;
+    margin-left: 175px;
+    text-shadow: 4px 16px 18px black; }
+
+  .header h3 {
+    color: #aaa0a0;
+    font-size: 15px;
+    text-shadow: 0px 12px 15px black;
+    margin-left: 175px;
+    margin-bottom: 20px; }
 
   nav {
     width: 100vw; }
@@ -511,7 +529,8 @@ i {
   .profile-pic {
     grid-area: box3;
     text-align: center;
-    width: 90vw; }
+    width: 90vw;
+    margin: auto; }
 
   .about-p {
     grid-area: box1;
@@ -534,9 +553,6 @@ i {
     grid-template-columns: repeat(1, 1fr);
     width: 80vw;
     margin: auto; }
-
-  .icon1 {
-    background: #413e3e; }
 
   .education {
     margin: 0;
@@ -628,7 +644,22 @@ i {
     grid-template-columns: repeat(1, 1fr);
     width: 100vw;
     margin: auto;
-    text-align: center; } }
+    text-align: center; }
+
+  button {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 12px 0;
+    margin-right: 19em;
+    width: 30%;
+    margin-top: -23em;
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem; } }
 /* Responsive Design */
 /*Tablets*/
 /* Responsive Design
