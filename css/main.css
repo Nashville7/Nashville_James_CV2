@@ -593,9 +593,9 @@ i {
 
   .secondary {
     grid-area: secondary;
-    height: 29rem;
+    height: 18rem;
     margin: 1em;
-    margin-top: -3em;
+    margin-top: -6em;
     width: 100vw;
     max-width: 400px auto; }
 
@@ -603,6 +603,7 @@ i {
     grid-area: title2;
     text-align: center;
     width: 100vw;
+    font-size: 23px;
     margin: 10px; }
 
   .icons {
@@ -616,7 +617,7 @@ i {
     height: 1400px; }
 
   .portfolio {
-    height: 900px; }
+    height: 800px; }
 
   .grid {
     display: grid;
@@ -629,13 +630,16 @@ i {
 
   .title {
     grid-area: title;
-    text-align: center; }
+    text-align: center;
+    font-size: 23px;
+    margin-top: 47px; }
 
   .box1 {
     grid-area: box1;
     text-align: center;
     width: 70vw;
     height: 10rem;
+    margin-top: -96px;
     margin-right: 2.5vw; }
 
   .box2 {
@@ -686,7 +690,29 @@ i {
     margin-top: -23em;
     position: absolute;
     bottom: 2rem;
-    left: 1rem; } }
+    left: 1rem; }
+
+  p {
+    font-size: 15px; }
+
+  .down-arrow {
+    position: absolute;
+    left: 50%;
+    padding-top: 2em;
+    color: white;
+    animation: move 1s ease infinite; }
+
+  @keyframes move {
+    0% {
+      padding-top: 1.8em; }
+    50% {
+      padding-top: 2.2em; }
+    100% {
+      padding-top: 1.8em; } }
+  .up-arrow {
+    right: 0;
+    bottom: 0;
+    color: white; } }
 /* Responsive Design */
 /*Tablets*/
 /* Responsive Design
