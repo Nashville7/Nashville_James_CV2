@@ -322,7 +322,7 @@ i {
 .overlay p {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
     color: white;
     font-size: 2rem;
@@ -450,15 +450,16 @@ i {
     grid-template-columns: repeat(5, 1fr);
     width: 80%;
     margin: auto;
-    
-    
 }
 
 
 
 .icons i {
     font-size: 6rem;
+    color: white;
     transition: all 0.5s ease-in-out;
+    margin-top: 2rem;
+    
 
 }
 
