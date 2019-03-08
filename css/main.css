@@ -239,10 +239,14 @@ i {
   transform: scale(1.2);
   transition: all 0.5s ease-in-out; }
 
-.box:hover img {
+.box1:hover img,
+.box2:hover img,
+.box3:hover img {
   transform: scale(1); }
 
-.box {
+.box1,
+.box2,
+.box3 {
   position: relative;
   height: 20rem;
   overflow: hidden; }
@@ -262,7 +266,9 @@ i {
   transition: all 0.5s ease-in-out;
   border-radius: 50%; }
 
-.box:hover .overlay {
+.box1:hover .overlay,
+.box2:hover .overlay,
+.box3:hover .overlay {
   opacity: 1;
   width: 100%;
   height: 100%;
@@ -284,11 +290,24 @@ i {
   color: #020202;
   background-color: #dddfeb; }
 
-.contact-container > div {
-  text-align: center;
-  display: inline;
-  padding: 20px;
-  margin: 20px; }
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  margin: auto; }
+
+.contact-grid i {
+  font-size: 5rem;
+  transition: all 0.5s ease-in-out; }
+
+.icon6 i:hover {
+  color: #d68932; }
+
+.icon7 i:hover {
+  color: #e63838; }
+
+.icon8 i:hover {
+  color: #5645e7; }
 
 /* footer properties */
 .footer {
@@ -544,7 +563,56 @@ i {
     grid-area: title2;
     text-align: center;
     width: 100vw;
-    margin: 10px; } }
+    margin: 10px; }
+
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90vw;
+    text-align: center;
+    margin-left: 1rem; }
+
+  .skills {
+    height: 1050px; }
+
+  .portfolio {
+    display: grid;
+    height: 1050px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "title" "myh4" "box1" "box2" "box3";
+    width: 90vw;
+    text-align: center; }
+
+  .title {
+    grid-area: title;
+    text-align: center;
+    width: 90vw; }
+
+  .box1 {
+    grid-area: box1;
+    text-align: center;
+    width: 50vw;
+    height: 20rem;
+    margin-left: 1rem; }
+
+  .box2 {
+    grid-area: box2;
+    text-align: center;
+    width: 100vw;
+    height: 20rem;
+    margin-left: 1rem; }
+
+  .box3 {
+    grid-area: box3;
+    text-align: center;
+    width: 100vw;
+    height: 20rem;
+    margin-left: 1rem; }
+
+  .myh4 {
+    grid-area: myh4;
+    text-align: center;
+    width: 100vw; } }
 /* Responsive Design */
 /*Tablets*/
 /* Responsive Design

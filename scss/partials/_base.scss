@@ -277,12 +277,16 @@ i {
     transition: all 0.5s ease-in-out;
 
 }
-.box:hover img {
+.box1:hover img,
+.box2:hover img,
+.box3:hover img {
     transform: scale(1);
 }
 
 
-.box {
+.box1,
+.box2,
+.box3 {
     position: relative;
     height: 20rem;
     overflow: hidden;
@@ -305,7 +309,9 @@ i {
     border-radius: 50%;
 }
 
-.box:hover .overlay {
+.box1:hover .overlay,
+.box2:hover .overlay, 
+.box3:hover .overlay {
     opacity: 1;
     width: 100%;
     height: 100%;
@@ -331,11 +337,29 @@ i {
     background-color: #dddfeb;
 }
 
-.contact-container > div {
-    text-align: center;
-    display: inline;
-    padding: 20px;
-    margin: 20px;
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin: auto;
+}
+
+.contact-grid i {
+    font-size: 5rem;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.icon6 i:hover {
+    color: rgb(214, 137, 50);
+}
+
+.icon7 i:hover {
+    color: rgb(230, 56, 56);
+}
+
+.icon8 i:hover {
+    color: rgb(86, 69, 231);
 }
 
 /* footer properties */
@@ -419,11 +443,6 @@ i {
     border-radius: 6px;
     position: relative;
 }
-
-
-// .icons i {
-//    font-size: 100px;
-// }
 
 .icons {
     display: grid;

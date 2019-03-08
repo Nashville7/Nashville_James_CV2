@@ -212,7 +212,6 @@ nav ul {
   height: 100%;
   grid-gap: 15px;
   grid-template-areas: 
-  
           "title2 tittle2"
           "tertairy tertiary"
           "secondary secondary";
@@ -243,9 +242,72 @@ nav ul {
 }
 
 
+.icons {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 90vw;
+  text-align: center;
+  margin-left: 1rem;
+  
+}
+.skills {
+  height: 1050px;
+}
 
+.portfolio {
+display: grid;
+height: 1050px;
+grid-template-columns: repeat(1, 1fr);
+grid-template-areas: 
+      "title"
+      "myh4"
+      "box1"
+      "box2"
+      "box3";
+width: 90vw;
+text-align: center;
 
 }
+
+.title {
+  grid-area: title;
+  text-align: center;
+  width: 90vw;
+}
+
+.box1 {
+  grid-area: box1;
+  text-align: center;
+  width: 50vw;
+  height: 20rem;
+  margin-left: 1rem;
+}
+
+.box2 {  
+  grid-area: box2;
+  text-align: center;
+  width: 100vw;
+  height: 20rem;
+  margin-left: 1rem;
+}
+
+.box3 {  
+  grid-area: box3;
+  text-align: center;
+  width: 100vw;
+  height: 20rem;
+  margin-left: 1rem;
+}
+
+.myh4 {
+  grid-area: myh4;
+  text-align: center;
+  width: 100vw;
+}
+
+}
+  
+
 
 
 
