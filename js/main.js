@@ -1,5 +1,5 @@
-// function toggleSidebar(){
-//     document.getElementById("sidebar").classList.toggle('active');
-// }
+function toggleNav(){
+    document.getElementById("navbar").classList.toggle('active');
+}
 
 

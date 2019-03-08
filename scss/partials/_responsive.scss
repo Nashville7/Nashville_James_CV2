@@ -102,11 +102,21 @@
   
 }
 
-nav {
+#navbar {
 width: 100vw;
-// z-index: -1;
+height: 12rem;
+z-index: 2000;
+top: -14rem;
+transition: all 0.5s ease-in-out;
 }
 
+#navbar.active {
+  width: 100vw;
+  height: 12rem;
+  z-index: 2000;
+  top:0;
+  }
+  
 
 nav a {
   color: rgb(255, 255, 255);
@@ -115,23 +125,23 @@ nav a {
   // margin-left: 20px;
   transition: color 0.3s;
   padding: 3px;
-  line-height: 41px;
-  display: none;
-  
-  
+  display: block;
+  font-size: 12px;
+  line-height: 33px;
 }
 
 nav a:hover {
   color: blue;
+  background: red;
 }
 
-
-
 nav ul {
-  margin-top: 51px;
+  // margin-top: 51px;
   grid-template-columns: repeat(1, 1fr);
+  background: black;
   display: block;
   // background-color: rgba(0, 0, 0, 0.575);
+  margin-right: 3rem;
 }
 
 
@@ -153,7 +163,7 @@ nav ul {
   position: fixed;
   top: 1rem;
   // right: 0;
-  z-index: 1000;
+  z-index: 2000;
   
   
 }
