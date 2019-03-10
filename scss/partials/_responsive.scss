@@ -11,70 +11,6 @@
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
-// .header {
-//     background-image:linear-gradient(-45deg, rgba(115, 133, 144, 0.17) 50%, rgba(0, 0, 0, 0.2) 50%),  url("../images/apple-black.jpg");
-//     background-size: 100% 100%;
-//     background-repeat: no-repeat;
-//     background-size: contain;
-    
-// }
-
-// .logo {
-//     width: 164px;
-//     height: 130px;
-//     position: fixed;
-//     margin-top: -37px;
-//     margin-left: 5px;
-// }
-
-
-// nav {
-//     text-align: center;
-//     z-index: 1;
-//     width: 100%;
-// }
-
-
-// nav ul {
-//     display: block;
-//     text-align: center;
-//     margin-top: 61px;
-//     margin-right: 38em;
-// }
-
-// nav a {   
-//     text-align: center;
-//     margin-left: 0px !important;
-//     width: 100% !important;
-//     padding: 0;
-// }
-
-// .profile-pic {
-//     margin-top: -8em;
-//     float: none;
-//     padding: 0;
-//     padding-right: 14%;
-// }
-
-// p {
-//     text-align: left;
-//     font-size: 0.88em;
-// }
-
-// .about p {
-//   padding-right: 100px;
-//   font-size: 18px;
-//   padding-left: 1%;
-//   padding-right: 5%;
-//   color: #666;
-//   font-size: 8px;
-// }
-
-// .about h2 {
-//   font-size: 1em;
-//   padding-left: 9%;
-
-// }
 
 .header {
   width: 100vw;
@@ -122,7 +58,6 @@ nav a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: 700;
-  // margin-left: 20px;
   transition: color 0.3s;
   padding: 3px;
   display: block;
@@ -136,11 +71,9 @@ nav a:hover {
 }
 
 nav ul {
-  // margin-top: 51px;
   grid-template-columns: repeat(1, 1fr);
   background: black;
   display: block;
-  // background-color: rgba(0, 0, 0, 0.575);
   margin: auto;
   padding: 0;
   position: absolute;
@@ -158,10 +91,6 @@ nav ul {
   display: none;
 }
 
-// nav a:hover {
-//   color:#6ab04c;
-// }
-
 .hamburger-menu {
   display: block;
   cursor: pointer;
@@ -169,14 +98,10 @@ nav ul {
   top: 1rem;
   // right: 0;
   z-index: 2000;
-  
-  
 }
-
 
 .hamburger-menu span {
   background: rgb(255, 255, 255);
-  
 }
 
 .logo {
@@ -184,45 +109,37 @@ nav ul {
   height: 114px;
   margin-top: -31px;
 }
+
 // about grid
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 1000px;
   grid-template-areas: 
-          "about about"
-          "box3 box3"
-          "box1 box2" ;
+        "about about"
+        "box3 box3"
+        "box1 box2" ;
 }
 
 .profile-pic {
   grid-area: box3;
-  // width: 290px;
-  // max-width: 400px auto;
-  // height: auto;
   text-align: center;
   width: 90vw;
-  margin: auto;
-
-  // width: 18rem;
-  // height: 17rem;
+  margin: 6vw;
 }
   
-
 .about-p {
   grid-area: box1;
   width: 100vw;
   max-width: 400px auto;
   height: auto;
-  text-align: justify;
-  
-  
+  text-align: justify; 
 }
+
 .title {
   grid-area: about;
   text-align: center;
   width: 100vw;
-
 }
 
 .titleskills {
@@ -255,9 +172,9 @@ nav ul {
   height: 100%;
   grid-gap: 15px;
   grid-template-areas: 
-          "title2 tittle2"
-          "tertairy tertiary"
-          "secondary secondary";
+        "title2 tittle2"
+        "tertairy tertiary"
+        "secondary secondary";
 }
 
 .tertiary {
@@ -277,6 +194,7 @@ nav ul {
   width: 100vw;
   max-width: 400px auto;
 }
+
 .title2 {
   grid-area: title2;
   text-align: center;
@@ -292,26 +210,25 @@ nav ul {
   width: 90vw;
   text-align: center;
   margin-left: 1rem;
-  
 }
+
 .skills {
   height: 1400px;
+  padding-top: 9px;
 }
 
 // portfolio
-
 .portfolio {
   height: 800px;
+  padding-top: 9px;
 }
 
 .grid {
-display: grid;
 grid-template-columns: repeat(1, 1fr);
 display: grid;
 width: 80vw;
 margin: auto;
 grid-template-areas: 
-      "title"
       "myh4"
       "box1"
       "box2"
@@ -321,8 +238,8 @@ text-align: center;
 }
 
 .title {
-  grid-area: title;
   text-align: center;
+  margin-top: -11px;
   font-size: 23px;
   margin-top: 47px;
 }
@@ -363,10 +280,19 @@ text-align: center;
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  width: 100vw;
   margin: auto;
+  width: 90vw;
   text-align: center;
+  margin-left: 1rem;
   
+}
+
+.contact {
+  padding-top: 9px;
+}
+
+.about {
+  padding: 0;
 }
 
 .about p {
@@ -439,6 +365,20 @@ p {
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
+    nav a {
+      padding: 1px 7px;
+  }
+
+  .secondary {
+    margin: -1em;
+}
+
+
+
+  nav ul {
+    padding: 0px 21px;
+    
+}
 
   }
 

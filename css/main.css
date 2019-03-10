@@ -548,7 +548,7 @@ i {
     grid-area: box3;
     text-align: center;
     width: 90vw;
-    margin: auto; }
+    margin: 6vw; }
 
   .about-p {
     grid-area: box1;
@@ -614,23 +614,24 @@ i {
     margin-left: 1rem; }
 
   .skills {
-    height: 1400px; }
+    height: 1400px;
+    padding-top: 9px; }
 
   .portfolio {
-    height: 800px; }
+    height: 800px;
+    padding-top: 9px; }
 
   .grid {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
     display: grid;
     width: 80vw;
     margin: auto;
-    grid-template-areas: "title" "myh4" "box1" "box2" "box3";
+    grid-template-areas: "myh4" "box1" "box2" "box3";
     text-align: center; }
 
   .title {
-    grid-area: title;
     text-align: center;
+    margin-top: -11px;
     font-size: 23px;
     margin-top: 47px; }
 
@@ -664,9 +665,16 @@ i {
   .contact-grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    width: 100vw;
     margin: auto;
-    text-align: center; }
+    width: 90vw;
+    text-align: center;
+    margin-left: 1rem; }
+
+  .contact {
+    padding-top: 9px; }
+
+  .about {
+    padding: 0; }
 
   .about p {
     font-size: 15px; }
@@ -717,6 +725,15 @@ i {
     color: white; } }
 /* Responsive Design */
 /*Tablets*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  nav a {
+    padding: 1px 7px; }
+
+  .secondary {
+    margin: -1em; }
+
+  nav ul {
+    padding: 0px 21px; } }
 /* Responsive Design
 /*Desktop*/
 
