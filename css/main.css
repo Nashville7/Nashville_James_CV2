@@ -541,7 +541,7 @@ i {
   .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 1000px;
+    height: 1197px;
     grid-template-areas: "about about" "box3 box3" "box1 box2"; }
 
   .profile-pic {
@@ -615,7 +615,8 @@ i {
 
   .skills {
     height: 1400px;
-    padding-top: 9px; }
+    padding-top: 9px;
+    margin-bottom: -3rem; }
 
   .portfolio {
     height: 800px;
@@ -640,7 +641,7 @@ i {
     text-align: center;
     width: 70vw;
     height: 10rem;
-    margin-top: -96px;
+    margin-top: -80px;
     margin-right: 2.5vw; }
 
   .box2 {
@@ -674,7 +675,8 @@ i {
     padding-top: 9px; }
 
   .about {
-    padding: 0; }
+    padding: 0;
+    margin-top: -1rem; }
 
   .about p {
     font-size: 15px; }
@@ -726,14 +728,79 @@ i {
 /* Responsive Design */
 /*Tablets*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .header h2 {
+    font-size: 34px;
+    font-weight: 800;
+    margin-top: 225px;
+    margin-bottom: 22px;
+    margin-left: 477px;
+    text-shadow: 4px 16px 18px black; }
+
+  .header h3 {
+    color: #aaa0a0;
+    font-size: 18px;
+    text-shadow: 0px 12px 15px black;
+    margin-left: 28em; }
+
+  .about {
+    margin-top: -2rem;
+    height: 123vh; }
+
+  .title {
+    font-size: 23px; }
+
+  .about p {
+    font-size: 15px; }
+
+  .title2 {
+    font-size: 25px; }
+
+  .grid img {
+    width: 100%;
+    height: 55%; }
+
+  .overlay {
+    top: 5%; }
+
+  .overlay p {
+    font-size: 20px;
+    top: 67%; }
+
+  button {
+    padding: 5px;
+    font-size: 16px;
+    width: 15%;
+    cursor: pointer;
+    margin: 12px 0;
+    float: right;
+    margin-top: 1em;
+    margin-right: 6em; }
+
   nav a {
     padding: 1px 7px; }
 
-  .secondary {
-    margin: -1em; }
-
   nav ul {
-    padding: 0px 21px; } }
+    padding: 0px 21px; }
+
+  .icons i {
+    font-size: 5rem; }
+
+  .down-arrow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 2em;
+    color: white;
+    font-size: 25px;
+    animation: down-arrow 1s ease infinite; }
+
+  @keyframes down-arrow {
+    0% {
+      padding-top: 1.8em; }
+    50% {
+      padding-top: 2.2em; }
+    100% {
+      padding-top: 1.8em; } } }
 /* Responsive Design
 /*Desktop*/
 
