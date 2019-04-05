@@ -404,6 +404,23 @@ i {
 .icon5 i:hover {
   color: #050505; }
 
+.down-arrow {
+  position: absolute;
+  left: 50%;
+  top: 83%;
+  transform: translateX(-50%);
+  padding-top: 2em;
+  color: white;
+  font-size: 25px;
+  animation: down-arrow 1s ease infinite; }
+
+@keyframes down-arrow {
+  0% {
+    padding-top: 1.8em; }
+  50% {
+    padding-top: 2.2em; }
+  100% {
+    padding-top: 1.8em; } }
 .detailcontainer {
   padding: 8px; }
 
@@ -457,7 +474,7 @@ i {
 
 /* Mobile Devices */
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .header {
     width: 100vw;
     height: 100vh;
@@ -541,7 +558,7 @@ i {
   .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 1197px;
+    height: 1212px;
     grid-template-areas: "about about" "box3 box3" "box1 box2"; }
 
   .profile-pic {
@@ -593,7 +610,7 @@ i {
 
   .secondary {
     grid-area: secondary;
-    height: 18rem;
+    height: 19rem;
     margin: 1em;
     margin-top: -6em;
     width: 100vw;
