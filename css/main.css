@@ -558,7 +558,7 @@ i {
   .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 1212px;
+    height: 1300px;
     grid-template-areas: "about about" "box3 box3" "box1 box2"; }
 
   .profile-pic {
