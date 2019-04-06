@@ -555,10 +555,19 @@ i {
     height: 114px;
     margin-top: -31px; }
 
+  .parallax3 {
+    height: 13px; }
+
+  .parallax1 {
+    height: 13px; }
+
+  .detailcontainer p {
+    font-size: 11px; }
+
   .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 1300px;
+    height: 1260px;
     grid-template-areas: "about about" "box3 box3" "box1 box2"; }
 
   .profile-pic {
@@ -577,7 +586,8 @@ i {
   .title {
     grid-area: about;
     text-align: center;
-    width: 100vw; }
+    width: 100vw;
+    margin-bottom: 0; }
 
   .titleskills {
     width: 100vw;
