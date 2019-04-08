@@ -222,7 +222,8 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 80%;
-  margin: auto; }
+  margin: auto;
+  margin: 0px 19vw; }
 
 .contact-grid i {
   font-size: 5rem;
