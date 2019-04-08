@@ -358,8 +358,7 @@ p {
 
 }
 
-// mobile2 
-
+// mobile
 @media only screen 
   and (min-device-width: 481px) 
   and (max-device-width: 767px) {
@@ -702,7 +701,6 @@ p {
       animation: down-arrow 1s ease infinite;
     }
     
-    
     @keyframes down-arrow {
       0% {padding-top:1.8em;}
       50% {padding-top:2.2em;}
@@ -715,10 +713,8 @@ p {
       color: white;
     }
     
-    
     }
   
-
 
 
 /* Responsive Design */
@@ -820,8 +816,9 @@ nav ul {
 /* Responsive Design
 /*Desktop*/
 @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
+  and (min-device-width: 1025px) 
+  and (max-device-width: 1600px) {
+    nav a {
+      padding: 0px 21px;
+    }
 }

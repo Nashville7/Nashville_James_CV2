@@ -182,7 +182,7 @@ button:hover {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(216, 216, 224, 0.685);
+  background-color: rgba(70, 70, 76, 0.84);
   width: 0;
   height: 0;
   opacity: 0;
@@ -190,7 +190,8 @@ button:hover {
   border-radius: 50%; }
   .overlay p a {
     text-decoration: none;
-    color: white; }
+    color: white;
+    font-size: 24px; }
 
 .box1:hover .overlay,
 .box2:hover .overlay,
@@ -1112,5 +1113,8 @@ i {
       padding-top: 1.8em; } } }
 /* Responsive Design
 /*Desktop*/
+@media screen and (min-device-width: 1025px) and (max-device-width: 1600px) {
+  nav a {
+    padding: 0px 21px; } }
 
 /*# sourceMappingURL=main.css.map */
