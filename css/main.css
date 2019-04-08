@@ -350,6 +350,11 @@ button:hover {
 .detailcontainer {
   padding: 8px; }
 
+.up-arrow .fa-arrow-up {
+  right: 0;
+  bottom: 0;
+  color: white; }
+
 @font-face {
   src: url(../fonts/Acme-Regular.ttf);
   font-family: "Acme"; }
