@@ -356,6 +356,11 @@ button:hover {
   bottom: 0;
   color: white; }
 
+.icon6 p:nth-child(2),
+.icon7 p:nth-child(2),
+.icon8 p:nth-child(2) {
+  margin-left: 2vw; }
+
 @font-face {
   src: url(../fonts/Acme-Regular.ttf);
   font-family: "Acme"; }
