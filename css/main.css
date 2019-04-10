@@ -742,7 +742,7 @@ i {
     width: 30%;
     margin-top: -23em;
     position: absolute;
-    bottom: 2rem;
+    bottom: 5rem;
     left: 1rem; }
 
   p {
@@ -769,6 +769,21 @@ i {
     bottom: 0;
     color: white; } }
 @media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
+  .header h2 {
+    margin-left: 0;
+    font-size: 18px;
+    margin-top: 313px; }
+
+  .header h3 {
+    margin-left: 0 !important;
+    font-size: 15px;
+    margin-top: -28px; }
+
+  button {
+    width: 27%;
+    margin-top: 1em;
+    margin-right: 21em; }
+
   nav ul {
     padding: 0 9px; }
 
@@ -782,7 +797,16 @@ i {
 
   .education {
     width: 100vw;
-    height: 140vh; }
+    height: 136vh;
+    padding-top: 0; }
+
+  .tertiary,
+  .secondary {
+    height: -1px; }
+
+  .tertiary .title,
+  .secondary .title {
+    margin-top: 0; }
 
   .skills {
     width: 100vw;

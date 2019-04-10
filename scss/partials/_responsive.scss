@@ -324,7 +324,7 @@ button {
   width: 30%;
   margin-top:-23em;
   position: absolute;
-  bottom: 2rem;
+  bottom: 5rem;
   left: 1rem;
 }
 
@@ -713,6 +713,25 @@ p {
     //   color: white;
     // }
 
+    .header h2 {
+      margin-left: 0;
+      font-size: 18px;
+      margin-top: 313px;
+    }
+
+    .header h3 {
+      margin-left: 0 !important;
+      font-size: 15px;
+      margin-top: -28px;
+    }
+
+    button {
+      width: 27%;
+      margin-top: 1em;
+      margin-right: 21em;
+      
+    }
+
     nav ul {
       padding: 0 9px;
     }
@@ -729,8 +748,22 @@ p {
 
     .education {
       width: 100vw;
-      height: 140vh;
+      height: 136vh;
+      padding-top: 0;
     }
+
+    .tertiary,
+    .secondary {
+      height: -1px;
+    }
+
+    .tertiary .title,
+    .secondary .title {
+      margin-top: 0;
+    }
+
+  
+
 
     .skills {
       width: 100vw;
@@ -762,18 +795,16 @@ p {
   font-size: 17px;
 }
 
-    .contact {
-      width: 100vw;
-      height: 100vh;
-    }
+  .contact {
+    width: 100vw;
+    height: 100vh;
+  }
 
-
-
-    .parallax2 {
-      height: 10vh;
-    }
-    
-    }
+  .parallax2 {
+    height: 10vh;
+  }
+  
+}
   
 
 
