@@ -5,7 +5,7 @@ function toggleNav(){
 
 
 AOS.init({
-    duration: 2000,
+    duration: 1500,
   })
   
 
