@@ -231,7 +231,7 @@ button:hover {
   transition: all 0.5s ease-in-out; }
 
 .icon6 {
-  background: #95a3f4;
+  background-image: linear-gradient(to right top, #3772cb, #009cd3, #23bcc2, #91d4b4, #dce9c0);
   border-radius: 4%;
   height: 46vh;
   width: 18vw; }
@@ -245,7 +245,7 @@ button:hover {
   color: #d68932; }
 
 .icon7 {
-  background: #95a3f4;
+  background-image: linear-gradient(to right top, #3772cb, #009cd3, #23bcc2, #91d4b4, #dce9c0);
   border-radius: 4%;
   height: 46vh;
   width: 18vw; }
@@ -259,7 +259,7 @@ button:hover {
   color: #e63838; }
 
 .icon8 {
-  background: #95a3f4;
+  background-image: linear-gradient(to right top, #3772cb, #009cd3, #23bcc2, #91d4b4, #dce9c0);
   border-radius: 4%;
   height: 46vh;
   width: 18vw; }
@@ -702,7 +702,7 @@ i {
     margin-left: 1rem; }
 
   .icon6 {
-    background: #95a3f4;
+    background-image: linear-gradient(to right top, #3772cb, #009cd3, #23bcc2, #91d4b4, #dce9c0);
     border-radius: 4%;
     height: 34vh;
     margin: auto;
@@ -711,7 +711,7 @@ i {
     margin-top: 3rem; }
 
   .icon7 {
-    background: #95a3f4;
+    background-image: linear-gradient(to right top, #3772cb, #009cd3, #23bcc2, #91d4b4, #dce9c0);
     border-radius: 4%;
     height: 34vh;
     margin: auto;
@@ -719,7 +719,7 @@ i {
     margin-bottom: 1rem; }
 
   .icon8 {
-    background: #95a3f4;
+    background-image: linear-gradient(to right top, #3772cb, #009cd3, #23bcc2, #91d4b4, #dce9c0);
     border-radius: 4%;
     height: 34vh;
     margin: auto;
