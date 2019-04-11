@@ -241,6 +241,7 @@
     @include size;
     color: #020202;
     background-color: #dddfeb;
+    height: 80vh;
 }
 
 .contact-grid {
@@ -248,7 +249,8 @@
     grid-template-columns: repeat(3, 1fr);
     width: 80%;
     margin: auto;
-    margin: 0px 19vw;
+    margin: 0px 15vw;
+
 }
 
 .contact-grid i {
@@ -257,12 +259,54 @@
 
 }
 
+.icon6 {
+    background: #95a3f4;
+    border-radius: 4%;
+    height: 46vh;
+    width: 18vw;
+
+    p {
+        text-align: center;
+        position: relative;
+        top: 20%;
+        color: #dddfeb;
+    }
+}
+
 .icon6 i:hover {
     color: rgb(214, 137, 50);
 }
 
+.icon7 {
+    background: #95a3f4;
+    border-radius: 4%;
+    height: 46vh;
+    width: 18vw;
+
+    p {
+        text-align: center;
+        position: relative;
+        top: 20%;
+        color: #dddfeb;
+    }
+}
+
 .icon7 i:hover {
     color: rgb(230, 56, 56);
+}
+
+.icon8 {
+    background: #95a3f4;
+    border-radius: 4%;
+    height: 46vh;
+    width: 18vw;
+
+    p {
+        text-align: center;
+        position: relative;
+        top: 20%;
+        color: #dddfeb;
+    }
 }
 
 .icon8 i:hover {
@@ -435,4 +479,5 @@
 .icon7 p:nth-child(2),
 .icon8 p:nth-child(2) {
     margin-left: 2vw;
+    
 }
