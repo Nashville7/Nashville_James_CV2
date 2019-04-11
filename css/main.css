@@ -352,9 +352,13 @@ button:hover {
   padding: 8px; }
 
 .up-arrow .fa-arrow-up {
-  right: 0;
-  bottom: 0;
-  color: white; }
+  right: 5px;
+  color: white;
+  font-size: 16px;
+  border: 1px solid white;
+  background: #497849;
+  text-align: center;
+  position: absolute; }
 
 .icon6 p:nth-child(2),
 .icon7 p:nth-child(2),
@@ -765,9 +769,12 @@ i {
     100% {
       padding-top: 1.8em; } }
   .up-arrow .fa-arrow-up {
-    right: 0;
-    bottom: 0;
-    color: white; } }
+    right: 5px;
+    color: white;
+    font-size: 16px;
+    border: 1px solid white;
+    background: #497849;
+    text-align: center; } }
 @media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
   .header h2 {
     margin-left: 0;
