@@ -12,6 +12,9 @@ button {
   float: right;
   margin-top: 2em;
   margin-right: 19em; }
+  button a {
+    text-decoration: none;
+    color: white; }
 
 /* button hover effect */
 button:hover {
@@ -46,7 +49,7 @@ button:hover {
 /* heading 2 properties & values */
 .header h2 {
   color: #fff;
-  font-size: 37px;
+  font-size: 36px;
   font-weight: 800;
   margin-top: 225px;
   margin-bottom: 66px;
@@ -810,7 +813,7 @@ i {
     cursor: pointer;
     margin: 12px 0;
     margin-right: 19em;
-    width: 30%;
+    width: 7rem;
     margin-top: -23em;
     position: absolute;
     bottom: 5rem;
@@ -854,9 +857,10 @@ i {
     margin-top: -28px; }
 
   button {
-    width: 27%;
     margin-top: 1em;
-    margin-right: 21em; }
+    margin-right: 21em;
+    position: absolute;
+    width: 9rem; }
 
   nav ul {
     padding: 0 9px; }
@@ -910,7 +914,16 @@ i {
     height: 100vh; }
 
   .parallax2 {
-    height: 10vh; } }
+    height: 10vh; }
+
+  .icon6 {
+    width: 23vw; }
+
+  .icon7 {
+    width: 23vw; }
+
+  .icon8 {
+    width: 23vw; } }
 /* Responsive Design */
 /*Tablets*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -955,12 +968,13 @@ i {
   button {
     padding: 5px;
     font-size: 16px;
-    width: 15%;
+    width: 9rem;
+    position: absolute;
     cursor: pointer;
-    margin: 12px 0;
+    margin: 12px 33rem;
     float: right;
     margin-top: 1em;
-    margin-right: 6em; }
+    margin-right: 7em; }
 
   nav a {
     padding: 1px 7px; }
@@ -991,6 +1005,16 @@ i {
 /*Desktop*/
 @media screen and (min-device-width: 1025px) and (max-device-width: 1600px) {
   nav a {
-    padding: 0px 21px; } }
+    padding: 0px 21px; }
+
+  .header h3 {
+    margin: -3rem 0;
+    margin-left: 49rem;
+    position: absolute; }
+
+  button {
+    width: 9rem;
+    position: absolute;
+    margin: 14px 51rem; } }
 
 /*# sourceMappingURL=main.css.map */
