@@ -238,6 +238,15 @@ nav ul {
   margin-bottom: 1rem;
 }
 
+.icon9 {
+  background-image: linear-gradient(to right top, #3772cb, #009cd3, #23bcc2, #91d4b4, #dce9c0);
+    border-radius: 4%;
+    height: 34vh;
+    margin: auto;
+    width: 74vw;
+    margin-bottom: 1rem;
+}
+
 .skills {
   height: 1400px;
   padding-top: 9px;
@@ -307,14 +316,14 @@ text-align: center;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   margin: auto;
-  width: 90vw;
+  width: 93vw;
   text-align: center;
   margin-left: 1rem;
 }
 
 .contact {
   padding-top: 9px;
-  height: 136vh;
+  height: 170vh;
 }
 
 .about {
@@ -490,6 +499,31 @@ p {
   .icon8 {
     width: 23vw;
   }
+
+  .contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+  grid-gap: 2rem;
+  margin: auto;
+  margin: 0px 9vw;
+
+    i {
+      font-size: 5rem;
+    }
+    p {
+      font-size:12px;
+    }
+}
+
+.icon6,
+.icon7,
+.icon8,
+.icon9 {
+  width: 39vw;
+  height: 38vh;
+}
+  
 }
   
 
@@ -589,6 +623,8 @@ nav ul {
   50% {padding-top:2.2em;}
   100% {padding-top:1.8em;}
 }
+
+
 
   }
 
