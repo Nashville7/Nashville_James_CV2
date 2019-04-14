@@ -624,7 +624,21 @@ nav ul {
   100% {padding-top:1.8em;}
 }
 
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 80%;
+  margin: auto;
+  margin: 0px 1.5vw;
+  grid-gap: 1rem;
+}
 
+.icon6,
+.icon7,
+.icon8,
+.icon9 {
+  width: 23vw;
+}
 
   }
 
