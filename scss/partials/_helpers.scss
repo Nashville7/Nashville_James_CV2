@@ -28,9 +28,7 @@
     }
 }
 
-
 /* heading 2 properties & values */
-
 .header h2 {
     color: #fff;
     font-size: 36px;
@@ -38,23 +36,21 @@
     margin-top: 225px;
     margin-bottom: 66px;
     margin-left: 773px;
-    text-shadow: 4px 16px 18px black;
-    
+    text-shadow: 4px 16px 18px $main-title;
 }
 
 .title {
-    color: Black;
+    color:$main-title;
     font-size: 28px;
     font-weight: 700;
     letter-spacing: 1px;
-    // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-family: "Cabin";
     font-size: 32px;
     text-align: center;
 }
 
 .title2 {
-    color: Black;
+    color: $main-title;
     font-size: 28px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -68,11 +64,9 @@
 .header h3 {
     color: #aaa0a0;
     font-size: 20px;
-    text-shadow: 0px 12px 15px black;
+    text-shadow: 0px 12px 15px $main-title;
     margin-left: 39em;
-
 }
-
 
  /* about section properties: custom margin and sizing */
  .about {
@@ -83,7 +77,7 @@
     color: white;
     text-align: justify;
     background-size: cover;  
-    color: #666;
+    color: $text-color;
     height: 90vh;       
 }
 
@@ -99,7 +93,7 @@
      font-size: 18px;
      padding-left: 5%;
      padding-right: 5%;
-     color: #666;
+     color:$text-color;
      font-size: 17px;
 }
 
@@ -111,28 +105,18 @@
     float: right;
     margin: 1rem 7rem 1rem 1rem;
     box-shadow: 0 0 135px 6px #8d8484 inset;
-    // box-shadow: 104px 124px 135px 116px #dadada inset;
-
-
 }
-
 
 .content {
     padding: 5px;
 }
 
-
-
 /* skills section properties: custom margin and sizing */
 .skills {
     @include size;
-    // color: white;
     color: #444;
-    // box-shadow: 0 0 20px 20px #2B2B2B inset;
     text-align: center;
     height:600px;
-    // border: 20px solid #2B2B2B;;
-    // background: #2B2B2B;
     background-color: #dddfeb;
 }
 
@@ -143,11 +127,10 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     max-width: 100%;
     height: 90vh;
-    // background: linear-gradient(to right, #bfcfd9 0%, #d0dfe8 100%);
-
+    background: linear-gradient(to right, #cdd2d5 0%, #eceeef 100%);
+}
 
 /* portfolio section heading 4 properties     */
-}
 .portfolio h4 {
     font: 15px/24px 'opensans-semibold', sans-serif;
     text-transform: uppercase;
@@ -156,7 +139,6 @@
     margin-bottom: 48px;
     color: #95A3A3;
 }
-
 
 /* portfolio made into a grid */
 .grid {
@@ -234,8 +216,6 @@
     white-space: nowrap;
 }
 
-
-
 /* contact section properties: custom margin and sizing */
 .contact {
     @include size;
@@ -272,6 +252,7 @@
     }
 }
 
+// hovering
 .icon6 i:hover {
     color: rgb(214, 137, 50);
 }
@@ -330,7 +311,6 @@
 
 .icon9 i:hover {
     color: rgb(92, 102, 117);
-   
 }
 
 /* footer properties */
@@ -342,8 +322,6 @@
     background: #222;
     color: #777;
     padding: 30px 0 25px 0;
-    
-    
 }
 
 .footer-container {
@@ -353,37 +331,27 @@
 
 /* parallax image properties */
 .parallax1 {
-    padding: 70px 0;
-    position: relative;
+    @include parallax;
     background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.57) 50%, rgba(0, 0, 0, 0.57) 50%), url("../images/creative.jpg");
-    background-attachment: fixed;
     height: 130px;
-    background-size: cover;
     z-index: 1;
 }
 
 /* parallax image properties */
 .parallax2 {
-    padding: 70px 0;
-    position: relative;
+    @include parallax;
     background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.57) 50%, rgba(0, 0, 0, 0.57) 50%), url("../images/footer.jpg");
-    background-attachment: fixed;
     height: 200px;
-    background-size: cover;
-    
 }
 
+/* parallax image properties */
 .parallax3 {
-    padding: 70px 0;
-    position: relative;
+    @include parallax;
     background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.29) 50%, rgba(0, 0, 0, 0.31) 50%), url("../images/learning.jpg");
-    background-attachment: fixed;
     height: 130px;
-    background-size: cover;
 }
 
 // Logo
-
 .logo {
     z-index: 1001;
     width: 229px;
@@ -393,10 +361,8 @@
 }
 
 // Hamburger menu
-
 .navbar {
     overflow: visible;
-
 }
 
 .hamburger-menu  {
@@ -450,7 +416,6 @@
 }
 
 // down arrow
-
 .down-arrow {
     position: absolute;
     left: 50%;
@@ -460,18 +425,13 @@
     color: white;
     font-size: 25px;
     animation: down-arrow 1s ease infinite;
-  }
-  
+}
   
   @keyframes down-arrow {
     0% {padding-top:1.8em;}
     50% {padding-top:2.2em;}
     100% {padding-top:1.8em;}
   }
-
-.detailcontainer {
-    padding: 8px;
-}
 
 .up-arrow .fa-arrow-up {
     right: 5px;
@@ -487,17 +447,12 @@
     color: white;
 }
 
-
-
-
 .up-arrow .fa-arrow-up:hover {
     background: #0997c7;
 }
 
-
 .icon6 p:nth-child(2),
 .icon7 p:nth-child(2),
 .icon8 p:nth-child(2) {
-    margin-left: 2vw;
-    
+    margin-left: 2vw; 
 }

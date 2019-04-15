@@ -43,7 +43,7 @@ transition: all 0.5s ease-in-out;
   height: 15rem;
   z-index: 2000;
   top:0;
-  }
+}
   
 nav a {
   color: rgb(255, 255, 255);
@@ -121,7 +121,7 @@ nav ul {
   grid-template-areas: 
         "about about"
         "box3 box3"
-        "box1 box2" ;
+        "box1 box2";
 }
 
 .profile-pic {
@@ -199,7 +199,6 @@ nav ul {
     margin: 10px;
 }
 
-
 .icons {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -223,7 +222,6 @@ nav ul {
   border-radius: 4%;
   height: 34vh;
   margin: auto;
-  // width: 39vw;
   width: 74vw;
   margin-bottom: 1rem;
 }
@@ -233,7 +231,6 @@ nav ul {
   border-radius: 4%;
   height: 34vh;
   margin: auto;
-  // width: 39vw;
   width: 74vw;
   margin-bottom: 1rem;
 }
@@ -259,18 +256,18 @@ nav ul {
   padding-top: 9px;
 }
 
+//portfolio overlay grid
 .grid {
 grid-template-columns: repeat(1, 1fr);
 display: grid;
 width: 80vw;
 margin: auto;
+text-align: center;
 grid-template-areas: 
       "myh4"
       "box1"
       "box2"
       "box3";
-text-align: center;
-
 }
 
 .title {
@@ -375,7 +372,6 @@ p {
   animation: down-arrow 1s ease infinite;
 }
 
-
 @keyframes down-arrow {
   0% {padding-top:1.8em;}
   50% {padding-top:2.2em;}
@@ -390,7 +386,6 @@ p {
   background: #2ecbff;
   text-align: center;
 }
-
 
 }
 
@@ -416,7 +411,6 @@ p {
       margin-right: 21em;
       position: absolute;
       width: 9rem;
-
     }
 
     nav ul {
@@ -522,18 +516,15 @@ p {
 .icon9 {
   width: 39vw;
   height: 38vh;
-}
+  }
   
 }
   
-
-
 /* Responsive Design */
     /*Tablets*/
 @media only screen 
   and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (max-device-width: 1024px)  {
 
   .header h2 {
     font-size: 34px;
@@ -607,6 +598,7 @@ nav ul {
   font-size: 5rem;
 }
 
+// down arrow button properties
 .down-arrow {
   position: absolute;
   left: 50%;
@@ -647,6 +639,7 @@ nav ul {
 @media screen 
   and (min-device-width: 1025px) 
   and (max-device-width: 1600px) {
+    // padding on the a tags
     nav a {
       padding: 0px 21px;
     }
@@ -656,7 +649,7 @@ nav ul {
       margin-left: 49rem;
       position: absolute;
     }
-
+  //download button 
     button {
       width: 9rem;
       position: absolute;

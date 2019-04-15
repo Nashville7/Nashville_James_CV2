@@ -54,7 +54,7 @@ button:hover {
   margin-top: 225px;
   margin-bottom: 66px;
   margin-left: 773px;
-  text-shadow: 4px 16px 18px black; }
+  text-shadow: 4px 16px 18px Black; }
 
 .title {
   color: Black;
@@ -79,7 +79,7 @@ button:hover {
 .header h3 {
   color: #aaa0a0;
   font-size: 20px;
-  text-shadow: 0px 12px 15px black;
+  text-shadow: 0px 12px 15px Black;
   margin-left: 39em; }
 
 /* about section properties: custom margin and sizing */
@@ -138,8 +138,9 @@ button:hover {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   max-width: 100%;
   height: 90vh;
-  /* portfolio section heading 4 properties     */ }
+  background: linear-gradient(to right, #cdd2d5 0%, #eceeef 100%); }
 
+/* portfolio section heading 4 properties     */
 .portfolio h4 {
   font: 15px/24px 'opensans-semibold', sans-serif;
   text-transform: uppercase;
@@ -308,28 +309,29 @@ button:hover {
 .parallax1 {
   padding: 70px 0;
   position: relative;
-  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.57) 50%, rgba(0, 0, 0, 0.57) 50%), url("../images/creative.jpg");
-  background-attachment: fixed;
-  height: 130px;
   background-size: cover;
+  background-attachment: fixed;
+  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.57) 50%, rgba(0, 0, 0, 0.57) 50%), url("../images/creative.jpg");
+  height: 130px;
   z-index: 1; }
 
 /* parallax image properties */
 .parallax2 {
   padding: 70px 0;
   position: relative;
-  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.57) 50%, rgba(0, 0, 0, 0.57) 50%), url("../images/footer.jpg");
+  background-size: cover;
   background-attachment: fixed;
-  height: 200px;
-  background-size: cover; }
+  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.57) 50%, rgba(0, 0, 0, 0.57) 50%), url("../images/footer.jpg");
+  height: 200px; }
 
+/* parallax image properties */
 .parallax3 {
   padding: 70px 0;
   position: relative;
-  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.29) 50%, rgba(0, 0, 0, 0.31) 50%), url("../images/learning.jpg");
+  background-size: cover;
   background-attachment: fixed;
-  height: 130px;
-  background-size: cover; }
+  background-image: linear-gradient(-45deg, rgba(0, 0, 0, 0.29) 50%, rgba(0, 0, 0, 0.31) 50%), url("../images/learning.jpg");
+  height: 130px; }
 
 .logo {
   z-index: 1001;
@@ -400,9 +402,6 @@ button:hover {
     padding-top: 2.2em; }
   100% {
     padding-top: 1.8em; } }
-.detailcontainer {
-  padding: 8px; }
-
 .up-arrow .fa-arrow-up {
   right: 5px;
   color: white;
@@ -766,8 +765,8 @@ i {
     display: grid;
     width: 80vw;
     margin: auto;
-    grid-template-areas: "myh4" "box1" "box2" "box3";
-    text-align: center; }
+    text-align: center;
+    grid-template-areas: "myh4" "box1" "box2" "box3"; }
 
   .title {
     text-align: center;
@@ -968,7 +967,7 @@ i {
     height: 38vh; } }
 /* Responsive Design */
 /*Tablets*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .header h2 {
     font-size: 34px;
     font-weight: 800;
