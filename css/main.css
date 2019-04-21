@@ -423,6 +423,9 @@ button:hover {
 .icon8 p:nth-child(2) {
   margin-left: 2vw; }
 
+.year {
+  padding-left: 5px; }
+
 @font-face {
   src: url(../fonts/Acme-Regular.ttf);
   font-family: "Acme"; }
@@ -435,6 +438,7 @@ html {
 
 /* styling of the body*/
 body {
+  padding-left: 5pc;
   margin: 0;
   padding: 0;
   font-family: 'Thasadith', sans-serif;
