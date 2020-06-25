@@ -34,7 +34,6 @@ button:hover {
   padding: 10px;
   padding-top: 60px;
   background-image: linear-gradient(-45deg, rgba(115, 133, 144, 0.17) 50%, rgba(0, 0, 0, 0.2) 50%), url("../images/header.jpg");
-  background-attachment: fixed;
   background-size: cover;
   height: 600px;
   animation: moving 2s ease forwards; }
@@ -338,7 +337,8 @@ button:hover {
   width: 229px;
   height: 169px;
   position: fixed;
-  margin-top: -59px; }
+  margin-top: -59px;
+  cursor: pointer; }
 
 .navbar {
   overflow: visible; }
@@ -425,6 +425,32 @@ button:hover {
 
 .year {
   padding-left: 5px; }
+
+.workexperience {
+  margin: 0;
+  padding-top: 45px;
+  background-color: #dddfeb;
+  padding-bottom: 66px;
+  overflow: hidden;
+  color: white;
+  text-align: justify;
+  background-size: cover;
+  color: #666;
+  height: 90vh; }
+
+.exp-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 30px;
+  grid-auto-rows: minmax(100px, auto);
+  justify-items: stretch;
+  align-items: stretch;
+  padding: 20px; }
+
+.date-company {
+  text-align: right;
+  border-right: 1px solid #bbb;
+  padding-right: 20px; }
 
 @font-face {
   src: url(../fonts/Acme-Regular.ttf);
@@ -586,7 +612,7 @@ i {
 
   #navbar.active {
     width: 100vw;
-    height: 15rem;
+    height: 17rem;
     z-index: 2000;
     top: 0; }
 
@@ -598,7 +624,7 @@ i {
     padding: 3px;
     display: block;
     font-size: 12px;
-    line-height: 33px; }
+    line-height: 31px; }
 
   nav a:hover {
     color: blue;
@@ -613,7 +639,7 @@ i {
     position: absolute;
     left: 55%;
     transform: translateX(-50%);
-    top: 3rem; }
+    top: 2rem; }
 
   .fas .fa-house-damage,
   .fas .fa-graduation-cap,
@@ -665,6 +691,9 @@ i {
     height: auto;
     text-align: justify; }
 
+  .about p {
+    text-align: initial; }
+
   .title {
     grid-area: about;
     text-align: center;
@@ -680,6 +709,9 @@ i {
     grid-template-columns: repeat(1, 1fr);
     width: 80vw;
     margin: auto; }
+
+  .content-manage {
+    text-align: initial; }
 
   .education {
     margin: 0;
@@ -871,6 +903,9 @@ i {
     border: 1px solid white;
     background: #2ecbff;
     text-align: center; } }
+.exp-wrapper {
+  width: 80%; }
+
 @media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
   .header h2 {
     margin-left: 0;
@@ -881,6 +916,13 @@ i {
     margin-left: 0 !important;
     font-size: 15px;
     margin-top: -28px; }
+
+  .logo {
+    z-index: 1001;
+    width: 32vw;
+    height: 169px;
+    position: fixed;
+    margin-top: -59px; }
 
   button {
     margin-top: 1em;
@@ -898,6 +940,9 @@ i {
   .about {
     width: 100vw;
     height: 163vh; }
+
+  .content-manage {
+    text-align: initial; }
 
   .education {
     width: 100vw;
@@ -926,7 +971,9 @@ i {
   .picbox {
     height: 44%; }
 
-  .box1, .box2, .box3 {
+  .box1,
+  .box2,
+  .box3 {
     height: 71%; }
 
   .picbox {
@@ -1022,7 +1069,8 @@ i {
     margin-right: 7em; }
 
   nav a {
-    padding: 1px 7px; }
+    padding: 1px 7px;
+    font-size: 10px; }
 
   nav ul {
     padding: 0px 21px; }
@@ -1063,7 +1111,7 @@ i {
 /*Desktop*/
 @media screen and (min-device-width: 1025px) and (max-device-width: 1600px) {
   nav a {
-    padding: 0px 21px; }
+    padding: 0px 9px; }
 
   .header h3 {
     margin: -3rem 0;

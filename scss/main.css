@@ -762,7 +762,7 @@ i {
   }
   #navbar.active {
     width: 100vw;
-    height: 15rem;
+    height: 17rem;
     z-index: 2000;
     top: 0;
   }
@@ -792,7 +792,7 @@ i {
     left: 55%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    top: 3rem;
+    top: 2rem;
   }
   .fas .fa-house-damage,
   .fas .fa-graduation-cap,

@@ -358,6 +358,7 @@
     height: 169px;
     position: fixed;
     margin-top: -59px;
+    cursor: pointer;
 }
 
 // Hamburger menu
@@ -460,3 +461,33 @@
 .year {
     padding-left: 5px;
 }
+
+// work experience
+.workexperience {
+    
+        @include size;
+        background-color: #dddfeb;
+        padding-bottom: 66px;
+        overflow: hidden;
+        color: white;
+        text-align: justify;
+        background-size: cover;  
+        color: $text-color;
+        height: 90vh;       
+    
+}
+  .exp-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: stretch;
+    align-items: stretch;
+    padding: 20px;
+  }
+  
+  .date-company{
+    text-align: right;
+    border-right: 1px solid #bbb;
+    padding-right: 20px
+  }

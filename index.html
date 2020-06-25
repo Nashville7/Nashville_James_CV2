@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,23 +11,29 @@
     <!-- google fonts link -->
     <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
     <!-- linked to styles.css -->
-    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- title of document -->
     <title>My CV</title>
 </head>
+
 <body id="top">
     <!-- my navbar with jumplinks-->
-    <div class="container">
-        <img class="logo" src="logo/Logopit_1551304090848.png">
+    <div class="container" id="go-top">
+        <a href="#go-top"><img class="logo" src="logo/Logopit_1551304090848.png"></a>
         <nav id="navbar">
             <ul>
-                <li><a href="#aboutme"onclick="toggleNav()"><i class="fas fa-house-damage"></i>About</a></li>
-                <li><a href="#edu"onclick="toggleNav()"><i class="fas fa-graduation-cap"></i>Education</a></li>
-                <li><a href="#skill"onclick="toggleNav()"><i class="fas fa-american-sign-language-interpreting"></i>Skills</a></li>
-                <li><a href="#pfolio"onclick="toggleNav()"><i class="fas fa-briefcase"></i>Portfolio</a></li>
-                <li><a href="#contactme"onclick="toggleNav()"><i class="fas fa-file-contract"></i>Contact Details</a></li>
+                <li><a href="#aboutme" onclick="toggleNav()"><i class="fas fa-house-damage"></i>About</a></li>
+                <li><a href="#edu" onclick="toggleNav()"><i class="fas fa-graduation-cap"></i>Education</a></li>
+                <li><a href="#worktag" onclick="toggleNav()"><i
+                            class="fas fa-american-sign-language-interpreting"></i>Work Experience</a></li>
+                <li><a href="#skill" onclick="toggleNav()"><i
+                            class="fas fa-american-sign-language-interpreting"></i>Skills</a></li>
+                <li><a href="#pfolio" onclick="toggleNav()"><i class="fas fa-briefcase"></i>Portfolio</a></li>
+                <li><a href="#contactme" onclick="toggleNav()"><i class="fas fa-file-contract"></i>Contact Details</a>
+                </li>
             </ul>
         </nav>
         <div class="hamburger-menu" onclick="toggleNav()">
@@ -42,7 +49,8 @@
             <h2>Nashville James</h2>
             <!-- header 3 -->
             <h3>#Junior Web Developer</h3>
-           <a href="../Nashville_James_CV2/CV/Nashville James.pdf" download="Download CV"> <button>Download CV<i class="fas fa-download"></i></button></a>
+            <a href="../Nashville_James_CV2/CV/Nashville James.pdf" download="Download CV"> <button>Download CV<i
+                        class="fas fa-download"></i></button></a>
             <div class="down-arrow">
                 <a href="#aboutme"><i class="fas fa-angle-double-down"></i></a>
             </div>
@@ -53,26 +61,32 @@
         <section class="about" id="aboutme">
             <!-- image of myself -->
             <h1 class="title">About Me</h1>
-            <img class="profile-pic " src="images/IMG_9797 copy-min.png"  data-aos="zoom-in" alt="">
-            <div class="about-p" data-aos="zoom-in" >
-                <p>I am a Web Developer specializing in front end development. I believe in doing things right<br/> the first time and never leave things undone. I demonstrate attention to detail, I’m hardworking,<br/> ambitious and dedicated. I’m not easily disturbed and don’t lose focus of the task at hand.<br/> I can work in a team and on my own, without it influencing my productivity. I easily adapt to<br/> change and a firm believer in the value stewardship by leaving things better the way I found it.</p>
-                    
+            <img class="profile-pic " src="images/IMG_9797 copy-min.png" data-aos="zoom-in" alt="">
+            <div class="about-p" data-aos="zoom-in">
+                <p>I am a Web Developer specializing in front end development. I believe in doing things right<br /> the
+                    first time and never leave things undone. I demonstrate attention to detail, I’m hardworking,<br />
+                    ambitious and dedicated. I’m not easily disturbed and don’t lose focus of the task at hand.<br /> I
+                    can work in a team and on my own, without it influencing my productivity. I easily adapt to<br />
+                    change and a firm believer in the value stewardship by leaving things better the way I found it.</p>
+
                 <h2>Career objectives</h2>
-                <p>To co-operate with management & staff members of your team towards achieving the vision<br/> and mission of the department.</p>
-                <p>To be willing to be mentored and trained,to show respect for existing structures, procedures<br/> and policies.</p>
+                <p>To co-operate with management & staff members of your team towards achieving the vision<br /> and
+                    mission of the department.</p>
+                <p>To be willing to be mentored and trained,to show respect for existing structures, procedures<br />
+                    and policies.</p>
                 <p>To strive to be successful at everything I do and to give my best at all times.</p>
                 <p>To adhere to the discipline and statutory of the employer.</p>
-                    
+
                 <h2>Vision</h2>
-                <p>To ensure optimal value to the company with my capabilties</p> 
-            </div>       
+                <p>To ensure optimal value to the company with my capabilties</p>
+            </div>
         </section>
         <!-- end of about me section -->
         <div class="parallax3"></div>
 
         <!-- Education section starts here-->
         <!-- article class for container -->
-        <article class="edu-container "  data-aos="flip-up">
+        <article class="edu-container ">
             <!-- div class containing info about tertiary info -->
             <section class="education" id="edu">
                 <h1 class="title2">Education Information</h1>
@@ -89,12 +103,12 @@
                         </p>
                         <p>
                             <strong>Programming Languages</strong>
-                            : HTML and Bootstrap Framework,<br> CSS(SASS and 
+                            : HTML and Bootstrap Framework,<br> CSS(SASS and
                             SCSS), Javascript (Node.js, Express.js,
                             jQuery),<br> Mongodb, Angular(Typscript),Angular Material Framework,<br>
                             Wordpress
-                        </p>        
-                        <p> 
+                        </p>
+                        <p>
                             <strong>Institution</strong>
                             : CTI Education Group
                         </p>
@@ -102,37 +116,63 @@
                             <strong>Course</strong>
                             : Bachelor of Science in information Technology
                         </p>
-                    </section>     
+                    </section>
                 </div>
                 <!-- end of tertiary info -->
                 <!-- div class containing info about secondary info -->
-                <div class="secondary" >
+                <div class="secondary">
                     <h1 class="title">Secondary</h1>
                     <section class="content">
                         <h3><strong>Bellville High School</strong></h3>
-                            <p>
-                                <strong>Year</strong>
-                                : 2008-2012
-                            </p>
-                            <p>
-                                <strong>Subjects</strong>
-                                : Afrikaans,English,Maths Lit,CAT,<br/>Business Studies,Life Sciences
-                            </p>
-                            <p>
-                                <strong>Qualificiation</strong>
-                                : National Senior Certificate
-                            </p>
+                        <p>
+                            <strong>Year</strong>
+                            : 2008-2012
+                        </p>
+                        <p>
+                            <strong>Subjects</strong>
+                            : Afrikaans,English,Maths Lit,CAT,<br />Business Studies,Life Sciences
+                        </p>
+                        <p>
+                            <strong>Qualificiation</strong>
+                            : National Senior Certificate
+                        </p>
                     </section>
                 </div>
             </section>
-                <!-- end of secondary info -->
+            <!-- end of secondary info -->
         </article>
         <!-- Education section ends here-->
 
+        <section class="workexperience" id="worktag" >
+            <h1 class="title">WorkExperience</h1>
+            <section class="section-experience">
+                <div class="exp-wrapper">
+                    <div class="date-company">
+                        <h3>DigiOutsource</h3>
+                        <h4>September 2019 - February 2020</h4>
+                        <h4>Duties</h4>
+                    </div>
+                    <div class="job-description">
+                        <h3>Frontend Developer</h3>
+                        <h3>Software Developer Intern</h3>
+                        <div class="content-manage">
+                            <p>Maintain front end code.</p>
+                            <p>Solve problems in an efficient way.</p>
+                            <p>Release content that works across different browsers.</p>
+                            <p>Involved in a scrum based team, estimating and planning work.</p>
+                            <p>Ensure that code has been tested prior to release.</p>
+                            <p>Work to and meet deadlines.(Sprints)</p>
+                            <p>Assisting in troubleshooting issues.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
         <!-- Skills section starts here-->
-        <section class="skills" id="skill" data-aos="flip-up">
+        <section class="skills" id="skill">
             <h1 class="title">Professional Skills</h1>
-                <!-- paragraph tags -->
+            <!-- paragraph tags -->
             <div class="titleskills">
                 <p>Ability to Work Under Pressure</p>
                 <p>Decision Making</p>
@@ -155,7 +195,7 @@
                 <div class="icon3">
                     <p><i class="fab fa-js"></i></p>
                     <p>Javascript</p>
-                </div> 
+                </div>
                 <div class="icon4">
                     <p><i class="fab fa-sass"></i></p>
                     <p>Sass</p>
@@ -170,39 +210,42 @@
 
         <!-- Parallax image -->
         <div class="parallax1"></div>
-            <!-- end of parallax image -->
+        <!-- end of parallax image -->
 
         <!-- portfolio section starts here -->
-        <section class="portfolio" id="pfolio" data-aos="flip-left" >
+        <section class="portfolio" id="pfolio" data-aos="flip-left">
             <h1 class="title">Portfolio</h1>
-                <h4 class="myh4">Check out some of my work</h4>
-                    <!-- Created a grid -->
-                    <div class="grid">
-                        <div class="box1">
-                            <div class="picbox">
-                                <img src="images/Outdoor.jpg">
-                            </div>
-                            <div class="overlay">
-                                <p><a href="https://nashville7.github.io/outdoor-adventures/index.html" target="_blank">Outdoor Adventures</a></p>
-                            </div>
-                        </div>
-                        <div class="box2">
-                            <div class="picbox">
-                                <img src="images/blur-boy-depth-of-field-1183266.jpg">
-                            </div>
-                            <div class="overlay">
-                                <p><a href="https://nashville7.github.io/fashion-shop/index.html" target="_blank">Fashion shop</a></p>
-                            </div>
-                        </div>
-                        <div class="box3">
-                            <div class="picbox">
-                                <img src="images/CR7-Backgrounds.jpg">
-                            </div>
-                            <div class="overlay">
-                                <p><a href="http://footballistic-footballistic.7e14.starter-us-west-2.openshiftapps.com/" target="_blank">Football blog</a></p>
-                            </div>
-                        </div>
+            <h4 class="myh4">Check out some of my work</h4>
+            <!-- Created a grid -->
+            <div class="grid">
+                <div class="box1">
+                    <div class="picbox">
+                        <img src="images/Outdoor.jpg">
                     </div>
+                    <div class="overlay">
+                        <p><a href="https://nashville7.github.io/outdoor-adventures/index.html" target="_blank">Outdoor
+                                Adventures</a></p>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="picbox">
+                        <img src="images/blur-boy-depth-of-field-1183266.jpg">
+                    </div>
+                    <div class="overlay">
+                        <p><a href="https://nashville7.github.io/fashion-shop/index.html" target="_blank">Fashion
+                                shop</a></p>
+                    </div>
+                </div>
+                <div class="box3">
+                    <div class="picbox">
+                        <img src="images/CR7-Backgrounds.jpg">
+                    </div>
+                    <div class="overlay">
+                        <p><a href="http://footballistic-footballistic.7e14.starter-us-west-2.openshiftapps.com/"
+                                target="_blank">Football blog</a></p>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- portfolio section ends here -->
 
@@ -211,7 +254,8 @@
             <h1 class="title">Contact Me</h1>
             <div class="contact-grid" data-aos="flip-left">
                 <div class="icon6">
-                    <p><a href="https://github.com/Nashville7?tab=repositories" target="_blank"><i class="fab fa-git"></i></a></p>
+                    <p><a href="https://github.com/Nashville7?tab=repositories" target="_blank"><i
+                                class="fab fa-git"></i></a></p>
                     <p>Click on icon to view Git:</p>
                 </div>
                 <div class="icon7">
@@ -219,7 +263,8 @@
                     <p>Nashvillejames7@gmail.com</p>
                 </div>
                 <div class="icon8">
-                    <p><a href="https://www.linkedin.com/in/nashville-james-26b622179/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <p><a href="https://www.linkedin.com/in/nashville-james-26b622179/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
                     <p>Click to view my Linkedin:</p>
                 </div>
                 <div class="icon9">
@@ -243,10 +288,11 @@
                 </div>
             </div>
         </footer>
-    <!-- end of footer -->
+        <!-- end of footer -->
     </div>
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 <!-- end of body -->
+
 </html>
 <!-- end of html -->
