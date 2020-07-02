@@ -127,7 +127,7 @@ button:hover {
   color: #444;
   text-align: center;
   height: 600px;
-  background-color: #dddfeb; }
+  background: linear-gradient(to right, #cdd2d5 0%, #eceeef 100%); }
 
 /* portfolio section properties: custom margin and sizing */
 .portfolio {
